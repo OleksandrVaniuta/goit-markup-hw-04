@@ -104,6 +104,7 @@ nav {
 
 .page-header .contacts {
 	color: #757575;
+	fill: #757575;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -113,6 +114,10 @@ nav {
 .page-header .contacts:hover,
 .page-header .contacts:focus {
 	color: var(--acent-color);
+	fill: var(--acent-color);
+}
+.icon-head {
+	margin-right: 5px;
 }
 
 /* Hero CSS */
@@ -183,7 +188,7 @@ nav {
 	margin-top: 0;
 	margin-bottom: 10px;
 }
-.preference .item::before {
+/* .preference .item::before {
 	display: block;
 	content: "";
 	height: 120px;
@@ -191,20 +196,23 @@ nav {
 	margin-bottom: 30px;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 70px 70px;
+	background-size: 70px 70px; */
+
+/* .details::before { */
+/* background-image: url("../images/antenna\ 1.svg"); */
+.iconbox {
+	border-radius: 4px;
+	background-color: #f5f4fa;
+	/* height: 120px; */
+	text-align: center;
+	align-items: center;
+	margin-bottom: 30px;
 }
-.details::before {
-	background-image: url("../images/antenna\ 1.svg");
+.iconbox .icon {
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
-.punctuality::before {
-	background-image: url("../images/clock\ 1.svg");
-}
-.planing::before {
-	background-image: url("../images/diagram\ 1.svg");
-}
-.modern-tech::before {
-	background-image: url("../images/astronaut\ 1.svg");
-}
+
 .preference .text {
 	font-size: 14px;
 	line-height: 1.71;
@@ -271,10 +279,36 @@ nav {
 
 .position {
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 16px;
 	font-size: 16px;
 	line-height: 1.88;
 	text-align: center;
+}
+.networks-list {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+.networks-block {
+	background-color: #212121;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	text-align: center;
+	align-items: center;
+}
+.networks:not(:last-child) {
+	margin-right: 10px;
+}
+.networks-block:hover {
+	background-color: var(--acent-color);
+}
+.networks-icon {
+	margin-top: 11px;
+	width: 20px;
+	height: 20px;
 }
 
 /* footer CSS */
