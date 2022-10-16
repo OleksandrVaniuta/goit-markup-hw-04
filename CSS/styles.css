@@ -339,6 +339,7 @@ nav {
 	margin-bottom: 94px;
 }
 .client-link {
+	fill: #afb1b8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -351,17 +352,26 @@ nav {
 .client-link:hover,
 .client-link:focus {
 	border-color: var(--acent-color);
+	fill: var(--acent-color);
 }
 .clients-list .item:not(:last-child) {
 	margin-right: 30px;
 }
 /* footer CSS */
-.container.foot {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
+
 .page-footer {
 	background-color: #2f303a;
+}
+.footer-block {
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+}
+.container.foot {
+	width: 270px;
+	margin: 0;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .page-footer .logo {
 	padding-top: 0;
@@ -393,6 +403,27 @@ nav {
 	font-size: 14px;
 	line-height: 1.71;
 	text-decoration: none;
+}
+.foot-networkslist {
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-left: 30px;
+}
+.join-us {
+	margin: 0;
+	margin-top: 72px;
+	margin-bottom: 20px;
+}
+.networks.webstudio {
+	background-color: rgba(255, 255, 255, 0.1);
+	fill: #ffffff;
+	cursor: pointer;
+}
+.networks.webstudio:hover,
+.networks.webstudio:focus {
+	background-color: var(--acent-color);
 }
 
 /* portfolio filters CSS */
@@ -442,6 +473,11 @@ nav {
 	margin-bottom: 94px;
 	padding: 0px;
 }
+.project-link {
+	color: #757575;
+	text-decoration: none;
+	cursor: pointer;
+}
 .projects .item {
 	border: 1px solid #eeeeee;
 	margin-bottom: 30px;
@@ -458,12 +494,13 @@ nav {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects p {
+.project-link p {
 	margin-top: 0;
 	margin-bottom: 20px;
 	font-size: 16px;
 	line-height: 1.88;
 }
+
 .projects p,
 .projects h3 {
 	margin-left: 24px;
