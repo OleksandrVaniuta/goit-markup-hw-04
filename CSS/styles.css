@@ -279,20 +279,24 @@ nav {
 .team {
 	display: flex;
 	padding: 0;
+	margin: 0;
 }
 .team .item {
 	background-color: #ffffff;
+	width: 270px;
 }
 .team .item:not(:last-child) {
 	margin-right: 30px;
 }
-
+.team-descr {
+	padding: 30px 32px;
+}
 .section-title.person {
-	margin-top: 30px;
+	margin: 0;
 	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.88;
+	line-height: 1.2;
 	text-align: center;
 }
 
@@ -300,7 +304,7 @@ nav {
 	margin-top: 0;
 	margin-bottom: 16px;
 	font-size: 16px;
-	line-height: 1.88;
+	line-height: 1.2;
 	text-align: center;
 }
 .networks-list {
@@ -308,12 +312,12 @@ nav {
 	justify-content: center;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 30px;
 }
 .networks-list .item {
 	background-color: transparent;
 	box-shadow: none;
 	border-color: transparent;
+	border-radius: 50%;
 }
 .networks {
 	width: 44px;
@@ -438,14 +442,17 @@ nav {
 }
 
 /* portfolio filters CSS */
-.page-header.bottomline {
+.page-header.portfolio {
 	border-bottom: 1px solid #ececec;
+}
+.section.filter {
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 .filters {
 	display: flex;
+	margin: 0;
 	justify-content: center;
-	margin-top: 94px;
-	margin-bottom: 50px;
 }
 
 .filters .button {
@@ -468,10 +475,12 @@ nav {
 	color: #ffffff;
 	background-color: var(--acent-color);
 }
-
+.container.project-list {
+	padding-top: 50px;
+}
 .section-title.project {
-	margin-top: 20px;
-	margin-bottom: 4px;
+	margin: 0px;
+	/* margin-bottom: 4px; */
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
@@ -481,7 +490,7 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 0px;
-	margin-bottom: 94px;
+	/* margin-bottom: 94px; */
 	padding: 0px;
 }
 .project-link {
@@ -490,10 +499,10 @@ nav {
 	cursor: pointer;
 }
 .projects .item {
+	width: 370px;
 	border: 1px solid #eeeeee;
 	margin-bottom: 30px;
 	margin-right: 30px;
-	height: 370px;
 }
 .project-descr {
 	padding: 20px 24px;
@@ -510,13 +519,16 @@ nav {
 }
 
 .project-link p {
-	margin-top: 0;
-	margin-bottom: 20px;
+	margin: 0;
+	/* margin-bottom: 20px; */
 	font-size: 16px;
 	line-height: 1.88;
 }
+.container-descr {
+	padding: 20px 24px;
+}
 
-.projects p,
+/* .projects p,
 .projects h3 {
 	margin-left: 24px;
-}
+} */
