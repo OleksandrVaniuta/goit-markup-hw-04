@@ -533,6 +533,9 @@ nav {
 	padding: 0px;
 }
 .project-link {
+	display: block;
+	position: relative;
+
 	color: #757575;
 	text-decoration: none;
 	cursor: pointer;
@@ -544,11 +547,7 @@ nav {
 	margin-right: 30px;
 }
 
-.projects .item {
-	position: relative;
-}
-
-.project-link .cover-text {
+.cover-text {
 	display: block;
 	position: absolute;
 	height: 294px;
@@ -559,11 +558,13 @@ nav {
 	color: #ffffff;
 	background-color: rgba(33, 150, 243, 0.9);
 	padding: 63px 24px;
+	margin: 0;
 	top: 0;
 	left: 0;
 	opacity: 0;
 }
-.cover-text:hover {
+
+.project-link:hover {
 	opacity: 1;
 }
 
