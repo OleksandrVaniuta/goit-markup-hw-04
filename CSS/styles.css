@@ -89,6 +89,11 @@ nav {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -131,6 +136,13 @@ nav {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-header .contacts:hover,
 .page-header .contacts:focus {
@@ -191,6 +203,9 @@ nav {
 
 	background-color: rgba(0, 0, 0, 0.2);
 	z-index: 1;
+	transition-property: opacity;
+	transition-duration: 250ms;
+	transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
 	
 }
 .modal {
@@ -204,6 +219,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	padding: 8px;
+	
 }
 .close-modal {
 	display: flex;
@@ -214,7 +230,9 @@ nav {
 	border-radius: 50%;
 	border-color: transparent;
 	background-color: transparent;
-
+}
+.close-modal:hover {
+	fill: var(--acent-color);
 }
 .backdrop.is-hidden {
 	opacity: 0;
@@ -402,7 +420,14 @@ nav {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
+	background-color: transparent;
 	fill: #afb1b8;
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
 }
 .networks-list .item:not(:last-child) {
 	margin-right: 10px;
@@ -439,6 +464,10 @@ nav {
 	width: 170px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -542,6 +571,10 @@ nav {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters .item:not(:last-child) {
 	margin-right: 8px;
@@ -590,23 +623,37 @@ nav {
 }
 
 .cover-text {
-	display: block;
+	/* display: block;
 	position: absolute;
 	height: 294px;
-	width: 100%;
+	width: 100%; */
 	font-size: 18px;
 	line-height: 1.55;
 	letter-spacing: 0.03em;
 	color: #ffffff;
-	background-color: rgba(33, 150, 243, 0.9);
 	margin: 0;
+	padding: 63px 24px;
+	/* top: 0;
+	left: 0;
+	opacity: 0; */
+}
+.overlay-box {
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(33, 150, 243, 0.9);
+	transform: translateY(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.project-link:hover .cover-text {
-	opacity: 1;
+ 
+.project-link:hover .overlay {
+	transform: translate(0);
 }
 
 .project-descr {
